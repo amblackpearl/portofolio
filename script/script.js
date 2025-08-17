@@ -103,19 +103,19 @@ const animateOnScroll = () => {
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
 
-// Custom cursor
-const cursor = document.querySelector('.cursor');
-const cursorFollower = document.querySelector('.cursor-follower');
+// // Custom cursor
+// const cursor = document.querySelector('.cursor');
+// const cursorFollower = document.querySelector('.cursor-follower');
 
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
+// document.addEventListener('mousemove', (e) => {
+//     cursor.style.left = e.clientX + 'px';
+//     cursor.style.top = e.clientY + 'px';
 
-    setTimeout(() => {
-        cursorFollower.style.left = e.clientX + 'px';
-        cursorFollower.style.top = e.clientY + 'px';
-    }, 100);
-});
+//     setTimeout(() => {
+//         cursorFollower.style.left = e.clientX + 'px';
+//         cursorFollower.style.top = e.clientY + 'px';
+//     }, 100);
+// });
 
 // Cursor hover effects
 const hoverElements = document.querySelectorAll('a, button, .skill-item, .project-card, .social-icon');
@@ -153,3 +153,68 @@ contactForm.addEventListener('submit', (e) => {
     // Reset form
     contactForm.reset();
 });
+
+const canvas = document.getElementById("bubbles");
+const ctx = canvas.getContext("2d");
+let bubbles = [];
+
+function resize() {
+  canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+class Bubble {
+  constructor() {
+    this.reset();
+  }
+  reset() {
+    this.x = Math.random() * canvas.width;
+    this.y = canvas.height + Math.random() * canvas.height;
+    this.size = Math.random() * 25 + 10;
+    this.speed = Math.random() * 1 + 0.5;
+    this.alpha = Math.random() * 0.25 + 0.2;
+    this.offset = Math.random() * 100;
+  }
+  update() {
+    this.y -= this.speed;
+    this.x += Math.sin((this.y + this.offset) * 0.01) * 0.4;
+    if (this.y + this.size < 0) this.reset();
+  }
+  draw() {
+    // Main bubble sphere
+    let gradient = ctx.createRadialGradient(this.x, this.y, this.size * 0.2, this.x, this.y, this.size);
+    gradient.addColorStop(0, `rgba(255,255,255,${this.alpha * 0.8})`);
+    gradient.addColorStop(0.6, `rgba(255,255,255,${this.alpha * 0.25})`);
+    gradient.addColorStop(1, "rgba(255,255,255,0)");
+    ctx.fillStyle = gradient;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Highlight reflection (top-left)
+    ctx.beginPath();
+    ctx.arc(this.x - this.size * 0.3, this.y - this.size * 0.3, this.size * 0.2, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(255,255,255,0.5)";
+    ctx.fill();
+  }
+}
+
+function init() {
+  bubbles = [];
+  for (let i = 0; i < 50; i++) {
+    bubbles.push(new Bubble());
+  }
+}
+init();
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  bubbles.forEach(b => {
+    b.update();
+    b.draw();
+  });
+  requestAnimationFrame(animate);
+}
+animate();
