@@ -774,10 +774,13 @@ header.scrolled {
   transform: scale(1.1);
 }
 
-        .project-info {
-            padding: 1.5rem;
-            padding: 1.5rem;
-        }
+.project-info {
+  padding: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
 .project-info h3 {
   font-size: 1.3rem;
@@ -798,18 +801,16 @@ header.scrolled {
   align-content: space-between;
 }
 
-        .project-tag {
-            background-color: rgba(59, 130, 246, 0.1);
-            color: var(--primary);
-            padding: 0.3rem 0.8rem;
-            border-radius: 1rem;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            transition: all 0.3s ease;
-            
-            
-        }
+.project-tag {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
 
 .project-tag:hover {
   background-color: rgba(59, 130, 246, 0.3);
@@ -1282,5 +1283,4 @@ footer::before {
   }
 }
 
-        /* done, bawahnya style background */
-
+/* done, bawahnya style background */
