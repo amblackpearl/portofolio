@@ -134,25 +134,25 @@ hoverElements.forEach(element => {
     });
 });
 
-// Form submission
-const contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+// // Form submission
+// const contactForm = document.querySelector('.contact-form');
+// contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-    // Get form values
-    const name = contactForm.querySelector('input[type="text"]').value;
-    const email = contactForm.querySelector('input[type="email"]').value;
-    const message = contactForm.querySelector('textarea').value;
+//     // Get form values
+//     const name = contactForm.querySelector('input[type="text"]').value;
+//     const email = contactForm.querySelector('input[type="email"]').value;
+//     const message = contactForm.querySelector('textarea').value;
 
-    // Here you would typically send the form data to a server
-    console.log('Form submitted:', { name, email, message });
+//     // Here you would typically send the form data to a server
+//     console.log('Form submitted:', { name, email, message });
 
-    // Show success message
-    alert('Thank you for your message! I will get back to you soon.');
+//     // Show success message
+//     alert('Thank you for your message! I will get back to you soon.');
 
-    // Reset form
-    contactForm.reset();
-});
+//     // Reset form
+//     contactForm.reset();
+// });
 
 const canvas = document.getElementById("bubbles");
 const ctx = canvas.getContext("2d");
