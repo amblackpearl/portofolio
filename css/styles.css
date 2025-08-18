@@ -750,7 +750,6 @@
 
         .project-info {
             padding: 1.5rem;
-            padding: 1.5rem;
         }
 
         .project-info h3 {
@@ -781,8 +780,9 @@
             font-weight: 500;
             border: 1px solid rgba(59, 130, 246, 0.3);
             transition: all 0.3s ease;
-            
-            
+        }
+        .project-top{
+            flex: 1;
         }
 
         .project-tag:hover {
@@ -1252,4 +1252,3 @@
         }
 
         /* done, bawahnya style background */
-
