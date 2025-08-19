@@ -218,3 +218,10 @@ function animate() {
   requestAnimationFrame(animate);
 }
 animate();
+
+
+function openURL() {
+      var url = "assets/pdf/my_resume.pdf"; // Replace with your PDF file path
+
+      window.open(url, "_blank");
+    }

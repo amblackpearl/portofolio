@@ -1,495 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Priyo Adi Wibowo - Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@coreui/icons@3.0.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyo Adi Wibowo - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/icons@3.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  <body>
-    <canvas id="bubbles"></canvas>
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-    <!-- Header/Navbar -->
-    <header id="header">
-      <a href="#home" class="logo">
-        <i
-          class="fas fa-paw"
-          style="transform: rotate(12deg); display: inline-block"
-        ></i>
-        <i
-          class="fas fa-p"
-          style="transform: rotate(-22deg); display: inline-block"
-        ></i>
-        <i
-          class="fas fa-a"
-          style="transform: rotate(8deg); display: inline-block"
-        ></i>
-        <i
-          class="fas fa-w"
-          style="transform: rotate(-16deg); display: inline-block"
-        ></i
-      ></a>
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
+<body>
+  <canvas id="bubbles"></canvas>
+
+  <!-- Header/Navbar -->
+  <header id="header">
+    <a href="#home" class="logo">
+      <i class="fas fa-paw" style="transform: rotate(12deg); display: inline-block"></i>
+      <i class="fas fa-p" style="transform: rotate(-22deg); display: inline-block"></i>
+      <i class="fas fa-a" style="transform: rotate(8deg); display: inline-block"></i>
+      <i class="fas fa-w" style="transform: rotate(-16deg); display: inline-block"></i></a>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hi! I'm Priyo Adi Wibowo</h1>
+      <h2 class="typewriter-text"></h2>
+      <p>
+        Creating innovative electronics solutions with cutting-edge technology
+        and creative problem-solving.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="#projects" class="btn btn-outline">View Projects</a>
       </div>
-      <nav class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    </div>
+    <div class="hero-image">
+      <img src="assets/B5 kecil.jpg" alt="Priyo Adi Wibowo" />
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <h1>Hi! I'm Priyo Adi Wibowo</h1>
-        <h2 class="typewriter-text"></h2>
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <!-- <div class="about-image">
+        <img src="assets/B5.jpg" alt="Priyo Adi Wibowo" />
+      </div> -->
+      <div class="about-text">
+        <h3>Electronics Engineer & Developer</h3>
         <p>
-          Creating innovative electronics solutions with cutting-edge technology
-          and creative problem-solving.
+          I specialize in designing and implementing embedded systems, IoT
+          solutions, and industrial automation. With a strong foundation in
+          electronics engineering and programming, I create efficient and
+          reliable systems that solve real-world problems.
         </p>
-        <div class="hero-btns">
-          <a href="#contact" class="btn btn-primary">Contact Me</a>
-          <a href="#projects" class="btn btn-outline">View Projects</a>
-        </div>
+        <p>
+          My expertise includes PCB design, circuit analysis, and system
+          control, combined with programming skills in C++, Python, and web
+          technologies for creating comprehensive solutions.
+        </p>
+        <p>
+          I'm passionate about continuous learning and applying new
+          technologies to create innovative products that make a difference.
+        </p>
       </div>
-      <div class="hero-image">
-        <img src="assets/B5 kecil.jpg" alt="Priyo Adi Wibowo" />
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="assets/B5.jpg" alt="Priyo Adi Wibowo" />
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="skills-container">
+      <!-- Electronics Engineering -->
+      <div class="skill-card">
+        <h3>Electronics Engineering</h3>
+        <div class="skills-grid">
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/skill/arduino.webp" alt="Embedded System" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>
+                  Designing microcontroller-based systems(Arduino & ESP32) for
+                  embedded applications
+                </p>
+              </div>
+            </div>
+            <span class="skill-label">Embedded System</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/skill/iot.webp" alt="IoT" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Developing connected devices and sensor networks</p>
+              </div>
+            </div>
+            <span class="skill-label">IoT</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/skill/pcb-design.webp" alt="PCB Designing" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>
+                  Creating circuit layouts and manufacturing-ready designs
+                </p>
+              </div>
+            </div>
+            <span class="skill-label">PCB Designing</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/skill/circuit analyst.webp" alt="Circuit Analyzing" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Analyzing and optimizing electronic circuits</p>
+              </div>
+            </div>
+            <span class="skill-label">Circuits Analyzing</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/skill/plc.webp" alt="PLC" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Programming PLC using Ladder diagram</p>
+              </div>
+            </div>
+            <span class="skill-label">PLC Programming</span>
+          </div>
         </div>
-        <div class="about-text">
-          <h3>Electronics Engineer & Developer</h3>
+      </div>
+
+      <!-- Programming -->
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <div class="skills-grid">
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/programming/cpp.webp" alt="C++" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>
+                  System programming and performance-critical applications
+                </p>
+              </div>
+            </div>
+            <span class="skill-label">C++</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/programming/html.webp" alt="HTML" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Structuring content for web applications</p>
+              </div>
+            </div>
+            <span class="skill-label">HTML</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/programming/css.webp" alt="CSS" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Styling and layout design for modern web interfaces</p>
+              </div>
+            </div>
+            <span class="skill-label">CSS</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/programming/js.webp" alt="JavaScript" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Basic web development</p>
+              </div>
+            </div>
+            <span class="skill-label">JavaScript</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/programming/ladder.webp" alt="Ladder Logic" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>PLC programming for industrial automation</p>
+              </div>
+            </div>
+            <span class="skill-label">Ladder Logic</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/programming/python.webp" alt="Python" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Basic Python programming</p>
+              </div>
+            </div>
+            <span class="skill-label">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <h3>Tools & Software</h3>
+        <div class="skills-grid">
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/proteus.ico" alt="Proteus" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Circuit simulation and PCB design software</p>
+              </div>
+            </div>
+            <span class="skill-label">Proteus</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/kicad.ico" alt="KiCad" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Open-source electronics design automation</p>
+              </div>
+            </div>
+            <span class="skill-label">KiCad</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/solidworks.ico" alt="SolidWorks" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Basic 3D designing</p>
+              </div>
+            </div>
+            <span class="skill-label">SolidWorks</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/main.ico" alt="SolidWorks" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Programming OMRON PLC</p>
+              </div>
+            </div>
+            <span class="skill-label">CX-Programmer</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/VSCode.ico" alt="VSCode" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Lightweight but powerful source code editor</p>
+              </div>
+            </div>
+            <span class="skill-label">VS Code</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/webp/premierePro.webp" alt="PremierePro" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Professional video editing software</p>
+              </div>
+            </div>
+            <span class="skill-label">PremierePro</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/word.ico" alt="MS. Word" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Word processing and document creation</p>
+              </div>
+            </div>
+            <span class="skill-label">MS. Word</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/excel.ico" alt="MS. Excel" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Spreadsheets and data analysis</p>
+              </div>
+            </div>
+            <span class="skill-label">MS. Excel</span>
+          </div>
+          <div class="skill-icon">
+            <div class="bubble-icon">
+              <img src="assets/icon/powerpoint.ico" alt="MS. PowerPoint" class="skill-icon-img" />
+              <div class="skill-description">
+                <p>Presentation design and slideshow creation</p>
+              </div>
+            </div>
+            <span class="skill-label">MS. PowerPoint</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/project/extruder.webp" alt="Smart 3D Printer Extruder" />
+        </div>
+        <div class="project-info">
+          <h3>Smart 3D Printer Extruder</h3>
           <p>
-            I specialize in designing and implementing embedded systems, IoT
-            solutions, and industrial automation. With a strong foundation in
-            electronics engineering and programming, I create efficient and
-            reliable systems that solve real-world problems.
+            Precision control system for optimized billateral 3D printing with
+            adjustable temperature setpoint and stepper motor speed.
           </p>
-          <p>
-            My expertise includes PCB design, circuit analysis, and system
-            control, combined with programming skills in C++, Python, and web
-            technologies for creating comprehensive solutions.
-          </p>
-          <p>
-            I'm passionate about continuous learning and applying new
-            technologies to create innovative products that make a difference.
-          </p>
+          <div class="project-tags">
+            <span class="project-tag">ESP32</span>
+            <span class="project-tag">PID Control</span>
+            <!-- <span class="project-tag">Hysterysis Control</span> -->
+            <span class="project-tag">3D Printing</span>
+          </div>
+          <a href="#" class="project-link"><i class="fab fa-github"></i>&nbsp; Source Code</a>
         </div>
       </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-      <h2 class="section-title">Technical Expertise</h2>
-      <div class="skills-container">
-        <!-- Electronics Engineering -->
-        <div class="skill-card">
-          <h3>Electronics Engineering</h3>
-          <div class="skills-grid">
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/skill/arduino.webp"
-                  alt="Embedded System"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>
-                    Designing microcontroller-based systems(Arduino & ESP32) for
-                    embedded applications
-                  </p>
-                </div>
-              </div>
-              <span class="skill-label">Embedded System</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/skill/iot.webp"
-                  alt="IoT"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Developing connected devices and sensor networks</p>
-                </div>
-              </div>
-              <span class="skill-label">IoT</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/skill/pcb-design.webp"
-                  alt="PCB Designing"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>
-                    Creating circuit layouts and manufacturing-ready designs
-                  </p>
-                </div>
-              </div>
-              <span class="skill-label">PCB Designing</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/skill/circuit analyst.webp"
-                  alt="Circuit Analyzing"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Analyzing and optimizing electronic circuits</p>
-                </div>
-              </div>
-              <span class="skill-label">Circuits Analyzing</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/skill/plc.webp"
-                  alt="PLC"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Programming PLC using Ladder diagram</p>
-                </div>
-              </div>
-              <span class="skill-label">PLC Programming</span>
-            </div>
-          </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/project/lift.webp" alt="Virtual Button Lift System" />
         </div>
-
-        <!-- Programming -->
-        <div class="skill-card">
-          <h3>Programming</h3>
-          <div class="skills-grid">
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/programming/cpp.webp"
-                  alt="C++"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>
-                    System programming and performance-critical applications
-                  </p>
-                </div>
-              </div>
-              <span class="skill-label">C++</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/programming/html.webp"
-                  alt="HTML"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Structuring content for web applications</p>
-                </div>
-              </div>
-              <span class="skill-label">HTML</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/programming/css.webp"
-                  alt="CSS"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Styling and layout design for modern web interfaces</p>
-                </div>
-              </div>
-              <span class="skill-label">CSS</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/programming/js.webp"
-                  alt="JavaScript"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Basic web development</p>
-                </div>
-              </div>
-              <span class="skill-label">JavaScript</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/programming/ladder.webp"
-                  alt="Ladder Logic"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>PLC programming for industrial automation</p>
-                </div>
-              </div>
-              <span class="skill-label">Ladder Logic</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/programming/python.webp"
-                  alt="Python"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Basic Python programming</p>
-                </div>
-              </div>
-              <span class="skill-label">Python</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="skill-card">
-          <h3>Tools & Software</h3>
-          <div class="skills-grid">
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/proteus.ico"
-                  alt="Proteus"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Circuit simulation and PCB design software</p>
-                </div>
-              </div>
-              <span class="skill-label">Proteus</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/kicad.ico"
-                  alt="KiCad"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Open-source electronics design automation</p>
-                </div>
-              </div>
-              <span class="skill-label">KiCad</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/solidworks.ico"
-                  alt="SolidWorks"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Basic 3D designing</p>
-                </div>
-              </div>
-              <span class="skill-label">SolidWorks</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/main.ico"
-                  alt="SolidWorks"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Programming OMRON PLC</p>
-                </div>
-              </div>
-              <span class="skill-label">CX-Programmer</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/VSCode.ico"
-                  alt="VSCode"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Lightweight but powerful source code editor</p>
-                </div>
-              </div>
-              <span class="skill-label">VS Code</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/webp/premierePro.webp"
-                  alt="PremierePro"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Professional video editing software</p>
-                </div>
-              </div>
-              <span class="skill-label">PremierePro</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/word.ico"
-                  alt="MS. Word"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Word processing and document creation</p>
-                </div>
-              </div>
-              <span class="skill-label">MS. Word</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/excel.ico"
-                  alt="MS. Excel"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Spreadsheets and data analysis</p>
-                </div>
-              </div>
-              <span class="skill-label">MS. Excel</span>
-            </div>
-            <div class="skill-icon">
-              <div class="bubble-icon">
-                <img
-                  src="assets/icon/powerpoint.ico"
-                  alt="MS. PowerPoint"
-                  class="skill-icon-img"
-                />
-                <div class="skill-description">
-                  <p>Presentation design and slideshow creation</p>
-                </div>
-              </div>
-              <span class="skill-label">MS. PowerPoint</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="assets/project/extruder.webp"
-              alt="Smart 3D Printer Extruder"
-            />
-          </div>
-          <div class="project-info">
-            <h3>Smart 3D Printer Extruder</h3>
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Virtual Button Lift Prototype Control</h3>
             <p>
-              Precision control system for optimized billateral 3D printing with
-              adjustable temperature setpoint and stepper motor speed.
+              An IoT-based system using ESP32 as the controller. The ESP32 hosts a web server that provides virtual
+              buttons (Floor 1, 2, 3) accessible from any device via WiFi.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">ESP32</span>
-              <span class="project-tag">PID Control</span>
-              <!-- <span class="project-tag">Hysterysis Control</span> -->
-              <span class="project-tag">3D Printing</span>
-            </div>
-            <a href="#" class="project-link"
-              ><i class="fab fa-github"></i>&nbsp; Source Code</a
-            >
           </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="assets/project/lift.webp"
-              alt="Virtual Button Lift System"
-            />
+          <div class="project-tags">
+            <span class="project-tag">ESP32</span>
+            <span class="project-tag">IoT</span>
+            <span class="project-tag">Web Server</span>
           </div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Virtual Button Lift System</h3>
-              <p>
-                Touchless elevator control with enhanced safety features and
-                efficiency.
-              </p>
-            </div>
-            <div class="project-tags">
-              <span class="project-tag">ESP32</span>
-              <span class="project-tag">IoT</span>
-              <span class="project-tag">Web Server</span>
-            </div>
-            <a href="#" class="project-link"
-              ><i class="fab fa-github"></i> &nbsp; Source Code</a
-            >
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="assets/images/project-lawn.jpg"
-              alt="Smart Lawn Watering"
-            />
-          </div>
-          <div class="project-info">
-            <h3>Smart Lawn Watering</h3>
-            <p>
-              IoT-based irrigation system with web control and environmental
-              sensing.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">ESP32</span>
-              <span class="project-tag">IoT</span>
-              <span class="project-tag">Web Server</span>
-            </div>
-            <a href="#" class="project-link"
-              ><i class="fab fa-github"></i>&nbsp; Source Code</a
-            >
-          </div>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> &nbsp; Source Code</a>
         </div>
       </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="section-title">Let's Connect</h2>
-      <div class="contact-container">
-        <div class="contact-info">
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="assets/images/project-lawn.jpg" alt="Smart Lawn Watering" />
+        </div>
+        <div class="project-info">
+          <h3>Smart Lawn Watering</h3>
+          <p>
+            IoT-based irrigation system with web control and environmental
+            sensing.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">ESP32</span>
+            <span class="project-tag">IoT</span>
+            <span class="project-tag">Web Server</span>
+          </div>
+          <a href="#" class="project-link"><i class="fab fa-github"></i>&nbsp; Source Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-container">
+      <!-- <div class="contact-info">
           <h3>Contact Information</h3>
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
@@ -499,48 +381,51 @@
           </div>
           <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
-            <a href="https://www.wa.me/628992244500" class="contact-link"
+            <a href="https://wa.me/628992244500" class="contact-link"
               >+62 899 2244 500</a
             >
           </div>
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
             <a
-              href="https://maps.google.com/?q=Pasuruan,Indonesia"
+              href="https://www.google.com/maps/place/Pasuruan,+Jawa+Timur/"
               target="_blank"
               class="contact-link"
-              >Jakarta, Indonesia</a
+              >Pasuruan, Indonesia</a
             >
           </div>
-        </div>
-        <div class="contact-social">
-          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-blogger"></i></a>
-        </div>
+        </div> -->
+      <div class="contact-social">
+        <a href="mailto:priyoadiwibowo28@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/priyo-adi-wibowo/" class="social-icon"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/amblackpearl" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://awuhrakyat.blogspot.com" class="social-icon"><i class="fab fa-blogger"></i></a>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <p class="copyright">
-        © <span id="year"></span> Priyo Adi Wibowo. All rights reserved.
-      </p>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <div class="back-to-top">
-      <i class="fas fa-arrow-up"></i>
     </div>
-    <script src="script/script.js"></script>
-    <script></script>
-  </body>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> Priyo Adi Wibowo. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <script src="script/script.js"></script>
+  <script></script>
+</body>
+
 </html>
