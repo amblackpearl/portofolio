@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Circuit Design & Analyst',
                 'PLC Programmer'
             ],
-            typeSpeed: 40,
+            typeSpeed: 80,
             backSpeed: 30,
             loop: true,
             showCursor: true,
