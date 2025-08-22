@@ -225,3 +225,17 @@ function openURL() {
 
       window.open(url, "_blank");
     }
+
+    const container = document.querySelector(".projects-container");
+const nextBtn = document.querySelector(".slider-btn.next");
+const prevBtn = document.querySelector(".slider-btn.prev");
+
+const cardWidth = document.querySelector(".project-card").offsetWidth + 32; // card + gap
+
+nextBtn.addEventListener("click", () => {
+  container.scrollBy({ left: cardWidth, behavior: "smooth" });
+});
+
+prevBtn.addEventListener("click", () => {
+  container.scrollBy({ left: -cardWidth, behavior: "smooth" });
+});
