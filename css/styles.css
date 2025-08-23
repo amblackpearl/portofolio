@@ -131,8 +131,7 @@ header.scrolled {
 }
 
 /* Hero Section */
-.hero {
-  top: 1rem;
+.hero {   
   min-height: 100vh;
   display: flex;
   align-items: center;
