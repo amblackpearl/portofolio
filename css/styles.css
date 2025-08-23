@@ -852,7 +852,7 @@ header.scrolled {
 .project-card {
   flex: 0 0 400px; /* fixed card width */
   scroll-snap-align: start;
-  max-height : 500px;
+  max-height : 580px;
   background-color: var(--card-bg);
   border-radius: 1rem;
   overflow: hidden;
