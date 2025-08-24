@@ -204,8 +204,8 @@ header.scrolled {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.8rem;
-  border-radius: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 50%;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);

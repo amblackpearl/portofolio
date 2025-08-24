@@ -3,101 +3,101 @@ const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    menuToggle.classList.toggle('active');
+  navLinks.classList.toggle('active');
+  menuToggle.classList.toggle('active');
 });
 
 // Close mobile menu when clicking a link
 document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        menuToggle.classList.remove('active');
-    });
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
 });
 
 // Header scroll effect
 window.addEventListener('scroll', () => {
-    const header = document.getElementById('header');
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
+  const header = document.getElementById('header');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
 
-    // Back to top button
-    const backToTop = document.querySelector('.back-to-top');
-    if (window.scrollY > 300) {
-        backToTop.classList.add('active');
-    } else {
-        backToTop.classList.remove('active');
-    }
+  // Back to top button
+  const backToTop = document.querySelector('.back-to-top');
+  if (window.scrollY > 300) {
+    backToTop.classList.add('active');
+  } else {
+    backToTop.classList.remove('active');
+  }
 });
 
 // Set current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Typewriter effect for the heading
-    if (document.querySelector('.typewriter-text')) {
-        const typed = new Typed('.typewriter-text', {
-            strings: [
-                'Electronics Engineer',
-                'PCB Designer',
-                'IoT Enthusiast',
-                'Circuit Design & Analyst',
-                'PLC Programmer'
-            ],
-            typeSpeed: 80,
-            backSpeed: 30,
-            loop: true,
-            showCursor: true,
-            cursorChar: '|',
-            contentType: 'html'
-        });
-    }
+  // Typewriter effect for the heading
+  if (document.querySelector('.typewriter-text')) {
+    const typed = new Typed('.typewriter-text', {
+      strings: [
+        'Electronics Engineer',
+        'PCB Designer',
+        'IoT Enthusiast',
+        'Circuit Design & Analyst',
+        'PLC Programmer'
+      ],
+      typeSpeed: 80,
+      backSpeed: 30,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+      contentType: 'html'
+    });
+  }
 });
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
 
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
 
-        window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-        });
-
-        // Update active nav link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.classList.remove('active');
-        });
-        this.classList.add('active');
+    window.scrollTo({
+      top: targetElement.offsetTop - 80,
+      behavior: 'smooth'
     });
+
+    // Update active nav link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
 });
 
 // Back to top functionality
 document.querySelector('.back-to-top').addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
 // Animate elements on scroll
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.skill-card, .project-card');
+  const elements = document.querySelectorAll('.skill-card, .project-card');
 
-    elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.2;
+  elements.forEach(element => {
+    const elementPosition = element.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
 
-        if (elementPosition < screenPosition) {
-            element.classList.add('animate');
-        }
-    });
+    if (elementPosition < screenPosition) {
+      element.classList.add('animate');
+    }
+  });
 };
 
 window.addEventListener('scroll', animateOnScroll);
@@ -121,17 +121,17 @@ window.addEventListener('load', animateOnScroll);
 const hoverElements = document.querySelectorAll('a, button, .skill-item, .project-card, .social-icon');
 
 hoverElements.forEach(element => {
-    element.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        cursor.style.opacity = '0.5';
-        cursorFollower.style.transform = 'translate(-50%, -50%) scale(1.5)';
-    });
+  element.addEventListener('mouseenter', () => {
+    cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    cursor.style.opacity = '0.5';
+    cursorFollower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+  });
 
-    element.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-        cursor.style.opacity = '1';
-        cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
-    });
+  element.addEventListener('mouseleave', () => {
+    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+    cursor.style.opacity = '1';
+    cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
 });
 
 // // Form submission
@@ -160,7 +160,7 @@ let bubbles = [];
 
 function resize() {
   canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+  canvas.height = window.innerHeight;
 }
 resize();
 window.addEventListener("resize", resize);
@@ -221,12 +221,12 @@ animate();
 
 
 function openURL() {
-      var url = "assets/pdf/my_resume.pdf"; // Replace with your PDF file path
+  var url = "assets/pdf/myCV-Priyo Adi Wibowo.pdf"; // Replace with your PDF file path
 
-      window.open(url, "_blank");
-    }
+  window.open(url, "_blank");
+}
 
-    const container = document.querySelector(".projects-container");
+const container = document.querySelector(".projects-container");
 const nextBtn = document.querySelector(".slider-btn.next");
 const prevBtn = document.querySelector(".slider-btn.prev");
 
