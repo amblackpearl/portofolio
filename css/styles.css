@@ -54,7 +54,7 @@ header {
   top: 1rem;            /* floating with padding top */
   left: 50%;            /* move to center horizontally */
   transform: translateX(-50%); /* true centering */
-  width: 80%;           /* still 80% width */
+  width: 90%;           /* still 80% width */
   padding: 1.8rem 5%;
   display: flex;
   justify-content: space-between;
@@ -1501,6 +1501,32 @@ footer {
   .section {
     padding: 2rem 5%;
   }
+  .contact-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.contact-social i {
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 35px;
+}
+.contact-social a {
+  text-decoration: none;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
 }
 
 @media (max-width: 576px) {
