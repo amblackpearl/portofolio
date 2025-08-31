@@ -196,12 +196,12 @@ header.scrolled {
       opacity: 0;
       animation: fadeInUp 1s ease forwards 0.3s;
       order: 2; /* Mengatur urutan tampilan */
-      margin-left: 50px; /* Memberi jarak antara gambar dan konten */
+      margin-left: 20px; /* Memberi jarak antara gambar dan konten */
     }
 
     .hero-image {
       width: 500px;
-      left : 5%;
+      right : 5%;
       height: 500px;
       order: 1; 
       transform: translateX(-20px);
@@ -221,6 +221,7 @@ header.scrolled {
       border-radius: 50%;
       border: 5px solid rgba(255, 255, 255, 0.1);
       transition: all 0.5s ease;
+      align-items: center;
     }
 
     @keyframes fadeInScale {

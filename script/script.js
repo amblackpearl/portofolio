@@ -172,8 +172,8 @@ class Bubble {
   reset() {
     this.x = Math.random() * canvas.width;
     this.y = canvas.height + Math.random() * canvas.height;
-    this.size = Math.random() * 25 + 10;
-    this.speed = Math.random() * 1 + 0.5;
+    this.size = Math.random() * 35 + 10;
+    this.speed = Math.random() * 0.8 + 0.5;
     this.alpha = Math.random() * 0.25 + 0.2;
     this.offset = Math.random() * 100;
   }
@@ -203,7 +203,7 @@ class Bubble {
 
 function init() {
   bubbles = [];
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 15; i++) {
     bubbles.push(new Bubble());
   }
 }
