@@ -155,13 +155,92 @@ header.scrolled {
   z-index: 0;
 }
 
+/* .hero-image {
+  position: absolute;
+  right: 5%;
+  width: 450px;
+  height: 450px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+  animation: morph 8s ease-in-out infinite;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  order: 1;
+  flex-shrink: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease forwards 0.6s,
+    morph 8s ease-in-out infinite 1.6s;
+}
+
 .hero-content {
   max-width: 600px;
   z-index: 1;
   transform: translateY(20px);
   opacity: 0;
+  order: 2;
   animation: fadeInUp 1s ease forwards 0.3s;
+      margin-left: 50px; /* Memberi jarak antara gambar dan konten
+
+} */
+
+    .hero-content {
+      max-width: 600px;
+      z-index: 1;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards 0.3s;
+      order: 2; /* Mengatur urutan tampilan */
+      margin-left: 50px; /* Memberi jarak antara gambar dan konten */
+    }
+
+    .hero-image {
+      width: 500px;
+      left : 5%;
+      height: 500px;
+      order: 1; 
+      transform: translateX(-20px);
+      opacity: 0;
+      flex-shrink: 0;
+      animation: fadeInScale 1s ease forwards 0.6s,
+      morph 8s ease-in-out infinite 1.6s;
+      box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      background: linear-gradient(60deg, var(--primary), var(--secondary));
+    }
+
+    .hero-image img {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.5s ease;
+    }
+
+    @keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+}
+
 
 @keyframes fadeInUp {
   to {
@@ -270,52 +349,8 @@ header.scrolled {
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
 }
 
-.hero-image {
-  position: absolute;
-  right: 5%;
-  width: 500px;
-  height: 500px;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  background: linear-gradient(45deg, var(--primary), var(--secondary));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
-  animation: morph 8s ease-in-out infinite;
-  z-index: 0;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeInScale 1s ease forwards 0.6s,
-    morph 8s ease-in-out infinite 1.6s;
-}
 
-@keyframes fadeInScale {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 
-@keyframes morph {
-  0%,
-  100% {
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  }
-
-  50% {
-    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-  }
-}
-
-.hero-image img {
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.5s ease;
-}
 
 .hero-image:hover img {
   transform: scale(1.05);
@@ -786,20 +821,12 @@ header.scrolled {
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
 }
 
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .bubble-icon {
+/* Responsive */
+/* @media (max-width: 768px) {
+  .btn-primary{
     width: 70px;
     height: 70px;
-    font-size: 1.8rem;
   }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -823,7 +850,7 @@ header.scrolled {
     width: 160px;
     font-size: 0.8rem;
   }
-}
+} */
 
 /* Projects Section */
 
@@ -1385,10 +1412,14 @@ footer {
   .hero h1 {
     font-size: 2.8rem;
   }
+  .btn-primary{
+    width: 70px;
+    height: 70px;
+  }
 
   .hero-image {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .about-content {
@@ -1529,7 +1560,7 @@ footer {
 }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .hero h1 {
     font-size: 2.2rem;
   }
@@ -1566,4 +1597,4 @@ footer {
   }
 }
 
-/* done, bawahnya style background */
+done, bawahnya style background */
