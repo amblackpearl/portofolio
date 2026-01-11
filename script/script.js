@@ -221,7 +221,7 @@ animate();
 
 
 function openURL() {
-  var url = "assets/pdf/myCV-Priyo Adi Wibowo.pdf"; // Replace with your PDF file path
+  var url = "assets/pdf/CV_PRIYO ADI WIBOWO.pdf"; // Replace with your PDF file path
 
   window.open(url, "_blank");
 }
