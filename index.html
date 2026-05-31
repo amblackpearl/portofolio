@@ -2,512 +2,733 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Priyo Adi Wibowo - Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/icons@3.0.1/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Priyo Adi Wibowo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles2.css">
 </head>
 
 <body>
-  <canvas id="bubbles"></canvas>
 
-  <!-- Header/Navbar -->
-  <header id="header">
-    <a href="#home" class="logo">
-      <i class="fas fa-paw" style="transform: rotate(12deg); display: inline-block"></i>
-      <i class="fas fa-p" style="transform: rotate(-22deg); display: inline-block"></i>
-      <i class="fas fa-a" style="transform: rotate(8deg); display: inline-block"></i>
-      <i class="fas fa-w" style="transform: rotate(-16deg); display: inline-block"></i></a>
-    <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-    <nav class="nav-links">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <!-- ─── Navigation ─── -->
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">[</span> PORTFOLIO <span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#software-stack">Software</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-image">
-      <img src="assets/B5 kecil.jpg" alt="Priyo Adi Wibowo" />
-    </div>
-    <div class="hero-content">
-      <h1>Hi! I'm Priyo Adi Wibowo</h1>
-      <h2 class="typewriter-text"></h2>
-      <p>
-        Creating innovative electronics solutions with cutting-edge technology
-        and creative problem-solving.
-      </p>
-      <div class="hero-btns">
-        <a alt="My Resume" class="btn btn-primary" onclick="openURL()"><i class="mdi mdi-cloud-download-outline" style="font-size: 35px;"></i></a>
-        <!-- <a href="#projects" class="btn btn-outline">View Projects</a> -->
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="section" id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-      <!-- <div class="about-image">
-        <img src="assets/B5.jpg" alt="Priyo Adi Wibowo" />
-      </div> -->
-      <div class="about-text">
-        <h3>Electronics Engineer & IoT Enthusiast</h3>
-        <p>
-          I specialize in designing and implementing embedded systems, IoT
-          solutions, and industrial automation. With a strong foundation in
-          electronics engineering and programming, I create efficient and
-          reliable systems that solve real-world problems.
-        </p>
-        <p>
-            My skills include PCB design, circuit analysis, IoT development and system
-            control, combined with programming abilities in C++, Python, and web
-            technologies for creating comprehensive solutions.
-        </p>
-        <p>
-          I'm passionate about continuous learning and applying new
-          technologies to create innovative products that make a difference.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="section" id="skills">
-    <h2 class="section-title">Specialized Skills</h2>
-    <div class="skills-container">
-      <!-- Electronics Engineering -->
-      <div class="skill-card">
-        <h3>Electronics Engineering</h3>
-        <div class="skills-grid">
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/skill/arduino.webp" alt="Embedded System" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>
-                  Designing microcontroller-based systems(Arduino & ESP32) for
-                  embedded applications
-                </p>
-              </div>
+    <!-- ─── Hero / Profile Photo Section ─── -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Profile Photo -->
+                <div class="profile-photo-wrapper reveal">
+                    <div class="profile-photo-outer-ring"></div>
+                    <div class="profile-photo-inner-ring"></div>
+                    <!-- Replace the src below with your actual profile photo URL -->
+                    <img src="assets/myPict.jpg" alt="Profile Photo" class="profile-photo" loading="eager"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="profile-photo-placeholder" style="display:none;" aria-hidden="true">
+                        JD
+                    </div>
+                </div>
+                <!-- Hero Content -->
+                <div class="hero-content reveal reveal-delay-2">
+                    <p class="hero-role">Embedded IoT Engineer <span class="hero-accent-dot"></span> Full-Stack
+                        IoT Developer</p>
+                    <h1>Priyo Adi Wibowo</h1>
+                    <p class="hero-tagline">
+                        Designing embedded IoT systems that connect hardware, data, and web interfaces into reliable
+                        real-world
+                        solutions.
+                    </p>
+                </div>
             </div>
-            <span class="skill-label">Embedded System</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/skill/iot.webp" alt="IoT" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Developing connected devices and sensor networks</p>
-              </div>
-            </div>
-            <span class="skill-label">IoT</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/skill/pcb-design.webp" alt="PCB Designing" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>
-                  Creating circuit layouts and manufacturing-ready designs
-                </p>
-              </div>
-            </div>
-            <span class="skill-label">PCB Designing</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/skill/circuit analyst.webp" alt="Circuit Analyzing" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Analyzing and optimizing electronic circuits</p>
-              </div>
-            </div>
-            <span class="skill-label">Circuits Analyzing</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/skill/plc.webp" alt="PLC" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Programming PLC using Ladder diagram</p>
-              </div>
-            </div>
-            <span class="skill-label">PLC Programming</span>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Programming -->
-      <div class="skill-card">
-        <h3>Programming</h3>
-        <div class="skills-grid">
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/programming/cpp.webp" alt="C++" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>
-                  System programming and performance-critical applications
-                </p>
-              </div>
+    <!-- ─── About Me Section ─── -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">01</span>
+                <span class="section-line-accent"></span>
+                <h2 class="section-title">About Me</h2>
+                <span class="section-line"></span>
             </div>
-            <span class="skill-label">C++</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/programming/python.webp" alt="Python" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Basic Python programming</p>
-              </div>
+            <div class="about-grid">
+                <div class="about-text reveal reveal-delay-1">
+                    <p>
+                        I'm an <strong>Electronics Engineering graduate</strong> with hands-on experience in
+                        <strong>embedded systems</strong>, <strong>IoT projects</strong>, and
+                        <strong>web development</strong>. My background has trained me to think
+                        <span class="highlight">systematically</span>, solve
+                        <span class="highlight">technical problems</span>, and build practical solutions that
+                        connect <strong>hardware</strong>, <strong>software</strong>, and
+                        <strong>data</strong>.
+                    </p>
+                    <br>
+                    <p>
+                        Alongside my experience with ESP32, Arduino, sensors, and control systems,
+                        I’m actively developing my skills in <strong>full-stack web development</strong>,
+                        including <span class="highlight">responsive frontend design</span>,
+                        <span class="highlight">backend programming</span>,
+                        <span class="highlight">database integration</span>,
+                        <span class="highlight">authentication</span>, and
+                        <span class="highlight">application logic</span>. I’m interested in contributing
+                        to IT and software development teams while bringing an
+                        <strong>engineering mindset</strong> to building reliable and functional applications.
+                    </p>
+                </div>
+                <div class="about-meta reveal reveal-delay-2">
+                    <div class="about-meta-item">
+                        <div class="meta-icon">&#9679;</div>
+                        <div>Location: <span>Pasuruan, East Java</span></div>
+                    </div>
+                    <div class="about-meta-item">
+                        <div class="meta-icon">&#9632;</div>
+                        <div>Projects: <span>10+ Completed</span></div>
+                    </div>
+                    <div class="about-meta-item">
+                        <div class="meta-icon">&#9650;</div>
+                        <div>Focus: <span>Embedded IoT & Web Development</span></div>
+                    </div>
+                    <div class="about-meta-item">
+                        <div class="meta-icon">&#9670;</div>
+                        <div>Available: <span>Freelance & Contract</span></div>
+                    </div>
+                </div>
             </div>
-            <span class="skill-label">Python</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/programming/html.webp" alt="HTML" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Structuring content for web applications</p>
-              </div>
-            </div>
-            <span class="skill-label">HTML</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/programming/css.webp" alt="CSS" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Styling and layout design for modern web interfaces</p>
-              </div>
-            </div>
-            <span class="skill-label">CSS</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/programming/js.webp" alt="JavaScript" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Basic web development</p>
-              </div>
-            </div>
-            <span class="skill-label">JavaScript</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/programming/ladder.webp" alt="Ladder Logic" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>PLC programming for industrial automation</p>
-              </div>
-            </div>
-            <span class="skill-label">Ladder Logic</span>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Tools -->
-      <div class="skill-card">
-        <h3>Tools & Software</h3>
-        <div class="skills-grid">
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/VSCode.ico" alt="VSCode" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Lightweight but powerful source code editor</p>
-              </div>
+    <!-- ─── Tech Stack Section ─── -->
+    <section class="stack-section" id="tech-stack">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">02</span>
+                <span class="section-line-accent"></span>
+                <h2 class="section-title">Tech Stack</h2>
+                <span class="section-line"></span>
             </div>
-            <span class="skill-label">VS Code</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/arduinoIDE.ico" alt="Arduino IDE" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Integrated development environment for Arduino projects</p>
-              </div>
+
+            <div class="stack-grid reveal reveal-delay-1">
+                <!-- HTML5 -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                    <span class="stack-label">HTML5</span>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                    <span class="stack-label">CSS3</span>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <span class="stack-label">JavaScript</span>
+                </div>
+
+                <!-- PHP -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                    <span class="stack-label">PHP</span>
+                </div>
+
+                <!-- MySQL -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                    <span class="stack-label">MySQL</span>
+                </div>
+
+                <!-- C -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/c/default.svg" />
+                    <span class="stack-label">C</span>
+                </div>
+
+                <!-- C++ -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                    <span class="stack-label">C++</span>
+                </div>
+
+                <!-- Python -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                    <span class="stack-label">Python</span>
+                </div>
+
+                <!-- Dart -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" />
+                    <span class="stack-label">Dart</span>
+                </div>
+
             </div>
-            <span class="skill-label">Arduino IDE</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/proteus.ico" alt="Proteus" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Circuit simulation and PCB design software</p>
-              </div>
-            </div>
-            <span class="skill-label">Proteus</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/kicad.ico" alt="KiCad" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Open-source electronics design automation</p>
-              </div>
-            </div>
-            <span class="skill-label">KiCad</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/solidworks.ico" alt="SolidWorks" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Basic 3D designing</p>
-              </div>
-            </div>
-            <span class="skill-label">SolidWorks</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/main.ico" alt="SolidWorks" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Programming OMRON PLC</p>
-              </div>
-            </div>
-            <span class="skill-label">CX-Programmer</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/webp/premierePro.webp" alt="PremierePro" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Professional video editing software</p>
-              </div>
-            </div>
-            <span class="skill-label">PremierePro</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/word.ico" alt="MS. Word" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Word processing and document creation</p>
-              </div>
-            </div>
-            <span class="skill-label">MS. Word</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/excel.ico" alt="MS. Excel" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Spreadsheets and data analysis</p>
-              </div>
-            </div>
-            <span class="skill-label">MS. Excel</span>
-          </div>
-          <div class="skill-icon">
-            <div class="bubble-icon">
-              <img src="assets/icon/powerpoint.ico" alt="MS. PowerPoint" class="skill-icon-img" />
-              <div class="skill-description">
-                <p>Presentation design and slideshow creation</p>
-              </div>
-            </div>
-            <span class="skill-label">MS. PowerPoint</span>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section class="section" id="projects">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="slider-wrapper">
-      <button class="slider-btn prev">
-        <i class="fas fa-arrow-left"></i>
-      </button>
-      <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/project/extruder.webp" alt="Smart 3D Printer Extruder" />
-          </div>
-          <div class="project-info">
-            <h3>Smart 3D Printer Extruder</h3>
-            <p>
-              Precision control system for optimized billateral 3D printing with
-              adjustable temperature setpoint and stepper motor speed.
+    <!-- ─── Software Stack Section ─── -->
+    <section class="stack-section" id="software-stack" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">03</span>
+                <span class="section-line-accent"></span>
+                <h2 class="section-title">Software Stack</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="stack-grid reveal reveal-delay-1">
+                <!-- Linux -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                    <span class="stack-label">Linux</span>
+                </div>
+                <!-- Terminal / Bash -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+                    <span class="stack-label">Terminal</span>
+                </div>
+                <!-- VS Code -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                    <span class="stack-label">VS Code</span>
+                </div>
+                <!-- Git -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                    <span class="stack-label">Git</span>
+                </div>
+                <!-- Github -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <i class="devicon-github-original stack-icon"></i>
+                    <span class="stack-label">Github</span>
+                </div>
+                <!-- npm -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" />
+                    <span class="stack-label">npm</span>
+                </div>
+                <!-- flutter -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
+                    <span class="stack-label">Flutter</span>
+                </div>
+                <!-- Arduino -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" />
+                    <span class="stack-label">Arduino IDE</span>
+                </div>
+                <!-- PlatformIO -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/platformio/default.svg" />
+                    <span class="stack-label">PlatformIO</span>
+                </div>
+                <!-- Proteus -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/proteus/default.svg" />
+                    <span class="stack-label">Proteus</span>
+                </div>
+                <!-- KiCad -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/kicad/default.svg" />
+                    <span class="stack-label">KiCad</span>
+                </div>
+                <!-- EasyEDA -->
+                <div class="stack-item">
+                    <span class="stack-corner tl"></span>
+                    <span class="stack-corner br"></span>
+                    <img class="stack-icon"
+                        src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/easyeda/default.svg" />
+                    <span class="stack-label">EasyEDA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Projects Section ─── -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">04</span>
+                <span class="section-line-accent"></span>
+                <h2 class="section-title">Projects</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="assets/project/extruder.webp"
+                                alt="Smart 3D Printer Extruder" /></div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-001</span>
+                        <h3 class="project-card-title">Smart 3d Print Extruder System</h3>
+                        <p class="project-card-desc">
+                            Precision control system for optimized 3d print with
+                            adjustable temperature setpoint and stepper motor speed.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">ESP32</span>
+                            <span class="project-card-tag">Arduino IDE</span>
+                            <span class="project-card-tag">PID Control</span>
+                            <span class="project-card-tag">Stepper Motor</span>
+                            <span class="project-card-tag">Sensor Integration</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/3d-print-Extruder-System" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="assets/project/lift.webp"
+                                alt="Virtual Button Lift System" /></div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-002</span>
+                        <h3 class="project-card-title">IoT-Based Lift System with Virtual Button Prototype</h3>
+                        <p class="project-card-desc">
+                            An IoT-based system using ESP32 as the controller and hosts a web server that provides
+                            virtual
+                            buttons (Floor 1, 2, 3) accessible from any device via WiFi.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">ESP32</span>
+                            <span class="project-card-tag">Arduino IDE</span>
+                            <span class="project-card-tag">Web Server</span>
+                            <span class="project-card-tag">Internet of Things</span>
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="assets/project/bmkg.webp"
+                                alt="Virtual Button Lift System" /></div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-003</span>
+                        <h3 class="project-card-title">ESP32 BMKG Weather Tracker & HTTP Client Demo
+                        </h3>
+                        <p class="project-card-desc">
+                            An interactive IoT application built for the ESP32 that leverages a local web server, local
+                            flash file system storage (LittleFS), and external APIs to fetch real-time weather forecasts
+                            in Indonesia.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">ESP32</span>
+                            <span class="project-card-tag">Arduino IDE</span>
+                            <span class="project-card-tag">Web Server</span>
+                            <span class="project-card-tag">Internet of Things</span>
+                            <span class="project-card-tag">REST API</span>
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="assets/project/lawn.webp" alt="Smart Lawn Watering" />
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-004</span>
+                        <h3 class="project-card-title">IoT-Based Smart Lawn Watering System</h3>
+                        <p class="project-card-desc">
+                            IoT-based automatic lawn watering system using ESP32 for control and monitoring soil
+                            moisture.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">ESP32</span>
+                            <span class="project-card-tag">Arduino IDE</span>
+                            <span class="project-card-tag">Web Server</span>
+                            <span class="project-card-tag">Sensor Integration</span>
+                            <span class="project-card-tag">Internet of Things</span>
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="assets/project/scribdUnlocker.webp" alt="scribdUnlocker" />
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-005</span>
+                        <h3 class="project-card-title">ScribdUnlocker</h3>
+                        <p class="project-card-desc">
+                            Custom Python software to unlock the contain of a Scribd document without
+                            downloading it. This tool is built with Python using tkinter for
+                            the GUI.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">Python</span>
+                            <span class="project-card-tag">Tkinter</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/ScribdUnlocker" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="assets/project/good.webp" alt="Lamp Controller Testing" />
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-006</span>
+                        <h3 class="project-card-title">IoT-Based Lamp Controller Testing</h3>
+                        <p class="project-card-desc">
+                            IoT based project that suposed for real-time test and monitoring a Lamp Controller
+                            Module from a partnered lamp manufacture that can automatically
+                            classify the final condition of the module.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">ESP32</span>
+                            <span class="project-card-tag">Arduino IDE</span>
+                            <span class="project-card-tag">Web Server</span>
+                            <span class="project-card-tag">Internet of Things</span>
+                            <span class="project-card-tag">Web Socket</span>
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/lamp-controller-testing" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image">
+                            <img src="assets/project/pythonAPP.webp" alt="RS485 App" />
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-007</span>
+                        <h3 class="project-card-title">RS485-SerialApp</h3>
+                        <p class="project-card-desc">
+                            Custom desktop python app to fetch data from ESP32 via RS485 USB to TTL that build using
+                            PySide6 for the GUI.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">ESP32</span>
+                            <span class="project-card-tag">Python</span>
+                            <span class="project-card-tag">PySide6</span>
+                            <span class="project-card-tag">Communication Protocol</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/RS485-SerialApp" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="/assets/project/bowai.webp" alt="BowAI" />
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <span class="project-card-number">P-008</span>
+                        <h3 class="project-card-title">BowAI</h3>
+                        <p class="project-card-desc">
+                            A modern, feature-rich Flutter Personal AI chat application that gives you a beautiful,
+                            intuitive
+                            interface to converse with a wide range of AI models—all powered by a single OpenRouter
+                            API key.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">Flutter</span>
+                            <span class="project-card-tag">Dart</span>
+                            <span class="project-card-tag">REST API</span>
+                            <span class="project-card-tag">OpenRouter API</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/bow_ai" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 9 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="/assets/project/toole.webp" /></div>
+                    </div>
+                    <div class=" project-card-body">
+                        <span class="project-card-number">P-009</span>
+                        <h3 class="project-card-title">ToolE</h3>
+                        <p class="project-card-desc">
+                            a comprehensive, web-based suite of electronics and engineering tools wrapped in a
+                            single,
+                            sleek, and highly responsive interface.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/toolE" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 10 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="/assets/project/koni.webp" /></div>
+                    </div>
+                    <div class=" project-card-body">
+                        <span class="project-card-number">P-010</span>
+                        <h3 class="project-card-title">Web Koni Kota Pasuruan</h3>
+                        <p class="project-card-desc">
+                            a comprehensive, simple and informative web profile and achievement for Koni Kota Pasuruan.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/KONIKotaPasuruan" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 11 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="/assets/project/laute.webp" /></div>
+                    </div>
+                    <div class=" project-card-body">
+                        <span class="project-card-number">P-011</span>
+                        <h3 class="project-card-title">Laute Hotel Website UI/UX Prototype</h3>
+                        <p class="project-card-desc">
+                            a simple , beutiful and modern design of hotel website prototype.
+                            sleek, and highly responsive interface.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/laute-project" class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 12 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="/assets/project/friends-web.webp" /></div>
+                    </div>
+                    <div class=" project-card-body">
+                        <span class="project-card-number">P-012</span>
+                        <h3 class="project-card-title">CRUD System Private Friendship Group Website</h3>
+                        <p class="project-card-desc">
+                            a simple and modern CRUD system for private friendship group website.
+                            This system is used to manage the activities and information of a private friendship group.
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                            <span class="project-card-tag">PHP</span>
+                            <span class="project-card-tag">SQL</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/private-friendship-group-web"
+                            class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 13 -->
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-card-image">
+                        <div class="project-image"><img src="/assets/project/toole-app.webp" /></div>
+                    </div>
+                    <div class=" project-card-body">
+                        <span class="project-card-number">P-013</span>
+                        <h3 class="project-card-title">ToolE Mobile APP</h3>
+                        <p class="project-card-desc">
+                            ToolE is a Flutter-based mobile application designed for electronics engineering students,
+                            technicians, hobbyists, and professional engineers.
+
+                        </p>
+                        <div class="project-card-tags">
+                            <span class="project-card-tag">HTML</span>
+                            <span class="project-card-tag">CSS</span>
+                            <span class="project-card-tag">JavaScript</span>
+                            <span class="project-card-tag">PHP</span>
+                            <span class="project-card-tag">SQL</span>
+                        </div>
+                        <a href="https://github.com/amblackpearl/private-friendship-group-web"
+                            class="project-card-link">
+                            Source Code <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Get in Touch Section ─── -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">05</span>
+                <span class="section-line-accent"></span>
+                <h2 class="section-title">Get in Touch</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal reveal-delay-1">
+                    <div class="info-item">
+                        <span class="stack-corner tl"></span>
+                        <span class="stack-corner br"></span>
+                        <i class="fa-regular fa-envelope info-icon "></i>
+                        <a href="mailto:priyoadiwibowo28@gmail.com" class="info-label">Email</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="stack-corner tl"></span>
+                        <span class="stack-corner br"></span>
+                        <i class="fa-brands fa-linkedin info-icon "></i>
+                        <a href="https://www.linkedin.com/in/priyo-adi-wibowo/" class="info-label">Linkedin</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="stack-corner tl"></span>
+                        <span class="stack-corner br"></span>
+                        <i class="devicon-github-original info-icon"></i>
+                        <a href="https://github.com/amblackpearl" class="info-label">Github</a>
+                    </div>
+                    <div class="info-item">
+
+                        <span class="stack-corner tl"></span>
+                        <span class="stack-corner br"></span>
+                        <i class="fa-brands fa-instagram info-icon"></i>
+                        <a href="https://www.instagram.com/messedit.up" class="info-label">Instagram</a>
+                    </div>
+                    <div class="info-item">
+
+                        <span class="stack-corner tl"></span>
+                        <span class="stack-corner br"></span>
+                        <i class="fa-brands fa-blogger info-icon"></i>
+                        <a href="https://awuhrakyat.blogspot.com/" class="info-label">Blog</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── Footer ─── -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; 2026 <span>dibow</span> &mdash; Built with precision. Designed with intent.
             </p>
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">ESP32</span>
-            <span class="project-tag">PID Control</span>
-            <span class="project-tag">Hysterysis Control</span>
-            <span class="project-tag">3D Printing</span>
-            <span class="project-tag">Sensor Integration</span>
-            <span class="project-tag">Data Acquisition</span>
-
-
-          </div>
-          <a href="https://github.com/amblackpearl/3d-print-Extruder-System" class="project-link"><i class="fab fa-github"></i>&nbsp; Source Code</a>
         </div>
+    </footer>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/project/lift.webp" alt="Virtual Button Lift System" />
-          </div>
-          <div class="project-info">
-            <div class="project-top">
-              <h3>Virtual Button Lift Prototype Control</h3>
-              <p>
-                An IoT-based system using ESP32 as the controller and hosts a web server that provides virtual
-                buttons (Floor 1, 2, 3) accessible from any device via WiFi.
-              </p>
-            </div>
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">ESP32</span>
-            <span class="project-tag">IoT</span>
-            <span class="project-tag">Sensor Integration</span>
-            <span class="project-tag">Data Acquisition</span>
-
-          </div>
-          <a href="#" class="project-link"><i class="fab fa-github"></i> &nbsp; Source Code</a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/project/lawn.webp" alt="Smart Lawn Watering" />
-          </div>
-          <div class="project-info">
-            <h3>IoT Control and Monitoring Lawn Soil Moisture</h3>
-            <p>
-              IoT-based automatic lawn watering system using ESP32 to monitors soil moisture and controls a water pump to water the lawn when needed.
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">ESP32</span>
-            <span class="project-tag">IoT</span>
-            <span class="project-tag">Data Acquisition</span>
-            <span class="project-tag">Sensor Integration</span>
-
-          </div>
-          <a href="#" class="project-link"><i class="fab fa-github"></i>&nbsp; Source Code</a>
-        </div>
-        <!-- Project 4 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/project/scribdUnlocker.webp" alt="scribdUnlocker" />
-          </div>
-          <div class="project-info">
-            <h3>Scribd Unlocker Build with Python</h3>
-            <p>
-              Custom Python software to unlock the contain of a Scribd document without
-              downloading it. This tool is built with Python using tkinter for
-              the GUI.
-            </p>
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">tk</span>
-          </div>
-          <a href="https://github.com/amblackpearl/ScribdUnlocker" class="project-link"><i class="fab fa-github"></i>&nbsp; Source Code</a>
-        </div>
-        <!--Project 5-->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/project/good.webp" alt="Lamp Controller Testing" />
-          </div>
-          <div class="project-info">
-            <h3>Lamp Controller Testing</h3>
-            <p>
-              IoT based project that suposed for real-time test and monitoring a Lamp Controller 
-              Module from a partnered lamp manufacture that can automatically
-              classify the final condition of the module.
-            </p>
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">ESP32</span>
-            <span class="project-tag">IoT</span>
-            <span class="project-tag">Communication Protocol</span>
-            <span class="project-tag">RS485</span>
-          </div>
-          <a href="https://github.com/amblackpearl/lamp-controller-testing" class="project-link"><i class="fab fa-github"></i>&nbsp; Source Code</a>
-        </div>
-        <!--Project 6-->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/project/pythonAPP.webp" alt="RS485 App" />
-          </div>
-          <div class="project-info">
-            <h3>RS485 Serial App</h3>
-            <p>
-              Custom desktop python app to fetch data from ESP32 via RS485 USB to TTL that build using PySide6 for the GUI.
-            </p>
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">RS485</span>
-            <span class="project-tag">Communication Protocol</span>
-            <span class="project-tag">Python</span>
-            <span class="project-tag">PySide6</span>
-          </div>
-          <a href="https://github.com/amblackpearl/RS485-SerialApp" class="project-link"><i class="fab fa-github"></i>&nbsp; Source Code</a>
-        </div>
-      </div>
-      <button class="slider-btn next">
-        <i class="fas fa-arrow-right"></i>
-      </button>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-container">
-      <!-- <div class="contact-info">
-          <h3>Contact Information</h3>
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:priyoadiwibowo28@gmail.com" class="contact-link"
-              >priyoadiwibowo28@gmail.com</a
-            >
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone-alt"></i>
-            <a href="https://wa.me/628992244500" class="contact-link"
-              >+62 899 2244 500</a
-            >
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <a
-              href="https://www.google.com/maps/place/Pasuruan,+Jawa+Timur/"
-              target="_blank"
-              class="contact-link"
-              >Pasuruan, Indonesia</a
-            >
-          </div>
-        </div> -->
-      <div class="contact-social">
-        <a href="mailto:priyoadiwibowo28@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/priyo-adi-wibowo/" class="social-icon"><i
-            class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/amblackpearl" class="social-icon"><i class="fab fa-github"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://awuhrakyat.blogspot.com" class="social-icon"><i class="fab fa-blogger"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <!-- <div class="footer-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div> -->
-    <p class="copyright">
-      © <span id="year"></span> Priyo Adi Wibowo. All rights reserved.
-    </p>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <div class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-  </div>
-  <script src="script/script.js"></script>
-  <script></script>
+    <script src="script/script2.js"></script>
 </body>
 
 </html>
