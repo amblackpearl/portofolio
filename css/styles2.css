@@ -781,6 +781,8 @@ body::before {
     transition: var(--transition-smooth);
     cursor: default;
     position: relative;
+    text-decoration: none;
+    color: inherit;
 }
 
 .info-icon {
@@ -985,6 +987,37 @@ body::before {
     .profile-photo-inner-ring {
         inset: -4px;
     }
+
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 14px 18px;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 14px 18px;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .contact-info>* {
+        grid-column: span 2;
+    }
+
+    /* center the 2 items on the second row */
+    .contact-info> :nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .contact-info> :nth-child(5) {
+        grid-column: 4 / span 2;
+    }
+
+    .info-item {
+        width: 80px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1013,8 +1046,8 @@ body::before {
         padding: 16px 18px;
     }
 
-    .btn-submit {
-        width: 100%;
-        text-align: center;
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 14px 18px;
     }
 }
